@@ -6,10 +6,12 @@ Pagina statica servita da un mini-server Node senza dipendenze (`server.js`), pe
 
 ## Struttura
 
-- `index.html` — la pagina (una sola)
-- `img/hero.png` — hero 16:9
+- `index.html` — la pagina (una sola) — *artefatto: sorgente nel vault*
+- `img/hero.png` — hero 16:9 — *artefatto: sorgente nel vault*
 - `server.js` — static server su `process.env.PORT`
-- `DESIGN.md` — il design system *Grazia*
+- `Dockerfile` — build deterministico per Railway
+
+> Sorgente di verità dei contenuti: il vault Obsidian (`.../Fitness Esistenziale/landing-proto/`). Qui vivono solo gli artefatti di deploy + l'infrastruttura di hosting.
 
 ## Locale
 
