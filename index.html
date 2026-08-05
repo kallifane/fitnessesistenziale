@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fitness Esistenziale</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bone:#F9F8F6;
+    --charcoal:#121212;
+    --rust:#A3472E;
+    --neutral:#4A4A4A;
+    --hairline:rgba(18,18,18,.14);
+    --serif:"Libre Caslon Text",Georgia,serif;
+    --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+    --max:1120px;
+    --col:640px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-font-smoothing:antialiased}
+  body{
+    background:var(--bone);color:var(--charcoal);
+    font-family:var(--mono);font-size:16px;line-height:24px;letter-spacing:-.01em;
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+  .col{max-width:var(--col)}
+
+  /* ---- type ---- */
+  .display{font-family:var(--serif);font-weight:400;font-size:64px;line-height:72px;letter-spacing:-.02em}
+  .h-lg{font-family:var(--serif);font-weight:400;font-size:40px;line-height:48px;letter-spacing:-.01em}
+  .h-md{font-family:var(--serif);font-weight:400;font-size:24px;line-height:32px}
+  .body-lg{font-size:16px;line-height:26px}
+  .lead{color:var(--neutral)}
+  .caps{font-family:var(--mono);font-weight:500;font-size:12px;line-height:16px;letter-spacing:.1em;text-transform:uppercase}
+  .rust{color:var(--rust)}
+  em{font-style:italic}
+  .serif-i{font-family:var(--serif);font-style:italic}
+
+  /* ---- masthead (hero 16:9, full-bleed) ---- */
+  .masthead{line-height:0}
+  .masthead img{display:block;width:100%;height:auto}
+
+  /* ---- sections ---- */
+  section{padding:128px 0}
+  section+section{border-top:1px solid var(--hairline)}
+  .marker{color:var(--neutral);margin-bottom:32px;display:block}
+  p+p{margin-top:20px}
+  .hero{padding-top:88px;padding-bottom:160px}
+  .hero .display{margin-bottom:40px}
+  .hero .kicker{margin-top:40px}
+
+  /* ---- image band ---- */
+  .band{padding:0}
+  .band img{display:block;width:100%;height:auto;filter:grayscale(100%) contrast(1.05)}
+  .band-inner{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline)}
+
+  /* ---- list ---- */
+  ul.dash{list-style:none;margin-top:8px}
+  ul.dash li{position:relative;padding-left:28px;margin-top:16px;line-height:26px}
+  ul.dash li::before{content:"—";position:absolute;left:0;color:var(--charcoal)}
+  ul.dash li b{font-weight:500}
+
+  /* ---- honesty block ---- */
+  .honesty{margin-top:32px;border-left:2px solid var(--rust);padding:16px 0 16px 24px;color:var(--neutral)}
+  .honesty b{color:var(--charcoal);font-weight:500}
+
+  /* ---- cta ---- */
+  .porta a{
+    display:inline-block;margin-top:36px;
+    font-family:var(--mono);font-size:15px;letter-spacing:.02em;
+    color:var(--charcoal);text-decoration:none;
+    padding-bottom:4px;border-bottom:1px solid var(--charcoal);
+    transition:color .15s,border-color .15s;
+  }
+  .porta a:hover{color:var(--rust);border-color:var(--rust)}
+
+  /* ---- footer ---- */
+  footer{border-top:1px solid var(--charcoal);padding:64px 0}
+  footer .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap}
+  footer .sign{font-family:var(--serif);font-style:italic;font-size:20px;line-height:28px}
+  footer .caps{color:var(--neutral)}
+
+  @media(max-width:640px){
+    .display{font-size:32px;line-height:38px}
+    .h-lg{font-size:28px;line-height:34px}
+    section{padding:80px 0}
+    .hero{padding:96px 0}
+  }
+</style>
+</head>
+<body>
+
+<!-- masthead -->
+<div class="masthead">
+  <img src="img/hero.png" alt="Fitness Esistenziale — una figura in meditazione nel vuoto">
+</div>
+
+<!-- 00 · SOGLIA -->
+<section class="hero">
+  <div class="wrap">
+    <div class="col">
+      <h1 class="display">C'è una resistenza che forse non sai nominare.</h1>
+      <p class="body-lg lead">Quella sensazione che hai quando qualcosa non torna tra chi senti di essere e come vivi il tuo quotidiano. Nel lavoro che non ti nutre. Nell'energia dispersa in mille cose inutili. Nella produttività usata come scudo invece che come espressione. Nelle relazioni che non ti nutrono.</p>
+      <p class="body-lg">Non ti serve motivazione: ti serve capire qual è la <span class="rust">frizione</span>. Io la chiamo così.</p>
+      <p class="body-lg kicker">Ci sono passato anch'io. Non dico che l'ho risolta: piuttosto l'ho attraversata, finché ha smesso di essere ostacolo. Di questo scrivo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 01 · COS'È -->
+<section>
+  <div class="wrap">
+    <div class="col">
+      <span class="caps marker">01 — Cos'è</span>
+      <h2 class="h-lg">Fitness Esistenziale</h2>
+      <p class="body-lg" style="margin-top:24px">La postura snella ed eretta verso la vita. Adesione e vitalità. Dal latino <em>ex-sistere</em>: emergere, venire alla luce.</p>
+      <p class="body-lg">Ma quella postura non è un dato: si acquisisce. Chiede un allenamento quotidiano. Non del corpo, dell'esistenza. Di qui il nome.</p>
+      <p class="body-lg">Non mi alleno per fuggire dalla vita. Mi alleno per aderirvi. Anche nei giorni no. Soprattutto nei giorni no.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 02 · CHI SCRIVE -->
+<section>
+  <div class="wrap">
+    <div class="col">
+      <span class="caps marker">02 — Chi scrive</span>
+      <h2 class="h-md">Sono Massimiliano.</h2>
+      <p class="body-lg" style="margin-top:24px">Fitness Esistenziale non l'ho teorizzato: l'ho attraversato con lutti, relazioni tossiche, perdite finanziarie, malattia. Sono tornato in piedi.</p>
+      <p class="body-lg">E l'ho fatto scrivendo. La scrittura è come do forma a ciò che vivo: non per insegnare, per capire.</p>
+      <p class="body-lg">Quello che dico è vero solo per me. E forse proprio per questo può risuonare: non perché sia universale, ma perché è personale. È umano.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 03 · IL GESTO MINIMO -->
+<section>
+  <div class="wrap">
+    <div class="col">
+      <span class="caps marker">03 — Il gesto minimo</span>
+      <h2 class="h-lg">Il metodo non è una ricetta.</h2>
+      <p class="body-lg" style="margin-top:24px">È avere un gesto che, quando l'energia crolla, ti tiene il filo con te stesso. Non serve a essere produttivi. Serve a non perderti. Lo spostamento da zero a uno vale più di qualsiasi performance.</p>
+      <p class="body-lg">Il mio si chiama Protocollo Minimo: meditazione, affermazione, musica, scrittura, in trentacinque minuti. Ma è il mio. Il tuo lo costruisci tu: una bussola non si consegna, si costruisce.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · LA STRUTTURA -->
+<section>
+  <div class="wrap">
+    <div class="col">
+      <span class="caps marker">04 — Sotto, la struttura</span>
+      <h2 class="h-md">Cinque pilastri</h2>
+      <ul class="dash body-lg">
+        <li><b>Onorare i limiti</b> — il limite è misura e materiale, non nemico.</li>
+        <li><b>Responsabilità radicale</b> — da spettatore ad architetto della propria esistenza.</li>
+        <li><b>Disciplina come mezzo</b> — mi esercito a vivere, non a dimostrare di saperlo.</li>
+        <li><b>Presenza</b> — abitare ciò che si vive, rifiutando il rumore.</li>
+        <li><b>Sottrazione</b> — costruire togliendo: fare spazio all'essenziale.</li>
+      </ul>
+      <p class="body-lg" style="margin-top:32px">Non è un traguardo. La disciplina vale finché è mezzo: quando diventa il fine (fare per non sentire) è solo uno scudo contro il sentire. Quando invece smette di essere sforzo e si fa natura, ha un nome: <span class="serif-i">Grazia</span>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · LA PORTA -->
+<section class="porta">
+  <div class="wrap">
+    <div class="col">
+      <span class="caps marker">05 — La porta</span>
+      <h2 class="h-lg">Qui continuo a scrivere</h2>
+      <p class="body-lg" style="margin-top:24px">Su Substack: pratica, filosofia, e l'onestà di chi attraversa mentre scrive. Se ti riguarda, puoi seguire.</p>
+      <a href="https://substack.com/@kallifane">Substack →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="sign">Ho sempre scelto di essere, piuttosto che dimostrare.</span>
+    <span class="caps">Fitness Esistenziale — 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>

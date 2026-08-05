@@ -1,0 +1,12 @@
+{
+  "name": "fitness-esistenziale-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page di Fitness Esistenziale — sistema Grazia.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
