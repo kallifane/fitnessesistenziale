@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YZFN94K31D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YZFN94K31D');
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Life Compass — Fitness Esistenziale</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bone:#F9F8F6;
+    --charcoal:#121212;
+    --rust:#A3472E;
+    --neutral:#4A4A4A;
+    --hairline:rgba(18,18,18,.14);
+    --serif:"Libre Caslon Text",Georgia,serif;
+    --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+    --max:1120px;
+    --col:640px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-font-smoothing:antialiased}
+  body{
+    background:var(--bone);color:var(--charcoal);
+    font-family:var(--mono);font-size:16px;line-height:24px;letter-spacing:-.01em;
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+  .col{max-width:var(--col)}
+
+  /* ---- type ---- */
+  .display{font-family:var(--serif);font-weight:400;font-size:64px;line-height:72px;letter-spacing:-.02em}
+  .h-lg{font-family:var(--serif);font-weight:400;font-size:40px;line-height:48px;letter-spacing:-.01em}
+  .h-md{font-family:var(--serif);font-weight:400;font-size:24px;line-height:32px}
+  .body-lg{font-size:16px;line-height:26px}
+  .lead{color:var(--neutral)}
+  .caps{font-family:var(--mono);font-weight:500;font-size:12px;line-height:16px;letter-spacing:.1em;text-transform:uppercase}
+  .rust{color:var(--rust)}
+  em{font-style:italic}
+  .serif-i{font-family:var(--serif);font-style:italic}
+
+  /* ---- topbar ---- */
+  .topbar{border-bottom:1px solid var(--hairline);padding:24px 0}
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:baseline}
+  .topbar a{color:var(--charcoal);text-decoration:none;font-family:var(--mono);font-size:13px;letter-spacing:.02em}
+  .topbar a:hover{color:var(--rust)}
+  .topbar .caps{color:var(--neutral)}
+
+  /* ---- sections ---- */
+  section{padding:128px 0}
+  section+section{border-top:1px solid var(--hairline)}
+  .marker{color:var(--neutral);margin-bottom:32px;display:block}
+  p+p{margin-top:20px}
+  .hero{padding-top:96px;padding-bottom:160px}
+  .hero .display{margin-bottom:40px}
+
+  /* ---- cta ---- */
+  .cta-row{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:40px}
+  .btn{
+    display:inline-block;background:var(--charcoal);color:var(--bone);
+    font-family:var(--mono);font-size:15px;letter-spacing:.02em;text-decoration:none;
+    padding:16px 28px;border:1px solid var(--charcoal);
+    transition:background .15s,border-color .15s;
+  }
+  .btn:hover{background:var(--rust);border-color:var(--rust)}
+  .alpha-tag{color:var(--neutral)}
+
+  .porta a{
+    display:inline-block;margin-top:36px;
+    font-family:var(--mono);font-size:15px;letter-spacing:.02em;
+    color:var(--charcoal);text-decoration:none;
+    padding-bottom:4px;border-bottom:1px solid var(--charcoal);
+    transition:color .15s,border-color .15s;
+  }
+  .porta a:hover{color:var(--rust);border-color:var(--rust)}
+
+  /* ---- lists ---- */
+  ul.dash{list-style:none;margin-top:8px}
+  ul.dash li{position:relative;padding-left:28px;margin-top:16px;line-height:26px}
+  ul.dash li::before{content:"—";position:absolute;left:0;color:var(--charcoal)}
+  ul.dash li b{font-weight:500}
+
+  ol.steps{list-style:none;counter-reset:step;margin-top:8px}
+  ol.steps li{counter-increment:step;position:relative;padding-left:44px;margin-top:20px;line-height:26px}
+  ol.steps li::before{
+    content:counter(step,decimal-leading-zero);position:absolute;left:0;top:1px;
+    font-family:var(--mono);font-size:13px;color:var(--rust);
+  }
+  ol.steps li b{font-weight:500}
+
+  /* ---- honesty / callout ---- */
+  .honesty{margin-top:32px;border-left:2px solid var(--rust);padding:16px 0 16px 24px;color:var(--neutral)}
+  .honesty b{color:var(--charcoal);font-weight:500}
+
+  /* ---- transcript ---- */
+  .transcript{margin-top:32px;border:1px solid var(--hairline);padding:32px}
+  .transcript p{margin-top:16px;line-height:26px}
+  .transcript p:first-child{margin-top:0}
+  .transcript b{font-weight:500}
+
+  /* ---- footer ---- */
+  footer{border-top:1px solid var(--charcoal);padding:64px 0}
+  footer .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap}
+  footer .sign{font-family:var(--serif);font-style:italic;font-size:20px;line-height:28px}
+  footer .caps{color:var(--neutral)}
+
+  @media(max-width:640px){
+    .display{font-size:32px;line-height:38px}
+    .h-lg{font-size:28px;line-height:34px}
+    section{padding:80px 0}
+    .hero{padding:80px 0}
+    .transcript{padding:24px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a href="index.html">← Fitness Esistenziale</a>
+    <span class="caps">Life Compass</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="col">
+      <h1 class="display">Sai cosa conta per te. Ma non è così che stai vivendo.</h1>
+      <p class="body-lg lead">Life Compass è un percorso in sei sessioni che rende visibili i valori che guidano davvero le tue scelte, e li trasforma in comportamenti che reggono nel tempo.</p>
+      <p class="body-lg">Venti minuti a settimana, per sei settimane. Gratuito.</p>
+      <div class="cta-row">
+        <a class="btn" href="mailto:massimiliano.davoli@gmail.com?subject=Life%20Compass%20%E2%80%94%20richiesta%20di%20accesso&body=Ciao%20Massimiliano%2C%0D%0A%0D%0Avorrei%20provare%20Life%20Compass.%0D%0A%0D%0A(facoltativo%3A%20una%20riga%20su%20cosa%20ti%20ha%20portato%20qui)">Richiedi l'accesso →</a>
+        <span class="caps alpha-tag">Alpha, accesso su richiesta</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 01 · IL PUNTO -->
+<section>
+  <div class="wrap">
+    <div class="col">
+      <span class="caps marker">01 — Il punto</span>
+      <p class="body-lg">Fatichi a decidere. Rimugini, ripensi, non ti senti mai del tutto sicuro. Arrivi a sera senza energie per il lavoro, per le persone, per te.</p>
+      <p class="body-lg">Di solito lo chiamiamo mancanza di disciplina, e la risposta è sempre la stessa: più metodo, più obiettivi, più controllo.</p>
+      <p class="body-lg">Ma la fatica non viene da lì. Viene da una <span class="rust">frizione</span>: tra chi sei e come stai vivendo. Finché quella frizione resta invisibile, ogni sistema che ci costruisci sopra è un modo elegante di non guardarla.</p>
+      <p class="body-lg">Life Compass serve a rendere visibile la frizione, e a chiuderla dal lato giusto.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 02 · COS'È -->
+<section>
+  <div class="wrap">
+    <div class="col">
+      <span class="caps marker">02 — Cos'è</span>
+      <h2 class="h-md">Sei sessioni, una alla settimana</h2>
+      <p class="body-lg" style="margin-top:24px">Una conversazione per volta, ognuna con un compito preciso, ognuna che lascia qualcosa di scritto da cui riparte la successiva.</p>
+      <ol class="steps body-lg">
+        <li><b>Consapevolezza</b> — i valori che emergono da come usi tempo ed energia, non da quelli che dichiari.</li>
+        <li><b>Movimento</b> — la prima azione concreta. Un passo, non un piano.</li>
+        <li><b>Protocollo minimo</b> — cosa riesci a fare anche nei giorni storti.</li>
+        <li><b>Momentum</b> — il ritmo che non dipende dall'umore, e come ti accorgi presto di esserti perso.</li>
+        <li><b>Protocollo massimo</b> — cosa significa dare il massimo nelle tue condizioni reali.</li>
+        <li><b>La bussola</b> — tutto il percorso si chiude in pochi principi che restano tuoi.</li>
+      </ol>
+      <p class="body-lg" style="margin-top:32px">Alla fine hai un documento: la tua bussola. Non un piano da eseguire — un modo di riconoscere dove sei quando ti serve saperlo.</p>
+      <p class="body-lg">Produce chiarezza su quali valori operano davvero nella tua vita, un sistema con due modalità — minimo e massimo — calibrato su di te, e la bussola stessa: il tuo Nord, il tuo sistema, la tua frizione principale, una domanda di orientamento.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 03 · COSA NON È -->
+<section>
+  <div class="wrap">
+    <div class="col">
+      <span class="caps marker">03 — Cosa non è</span>
+      <p class="body-lg"><b>Non è un coach.</b> Non ti motiva, non ti incalza, non ti chiede numeri e scadenze. Se ti sta spingendo troppo e glielo dici, si ferma.</p>
+      <p class="body-lg"><b>Non è un'app di obiettivi.</b> Non ci sono streak, metriche, promemoria. Non misura la tua giornata: ti aiuta a vedere dove sei.</p>
+      <p class="body-lg"><b>Non è terapia.</b> Se porti una ferita, la riconosce e non ci lavora sopra. Lavora sulla frizione che stai abitando adesso.</p>
+      <div class="honesty">
+        <b>Vale la pena dirlo fuori dai denti:</b> Life Compass non sostituisce un professionista. Se stai attraversando qualcosa di grosso — un lutto, una crisi, un periodo in cui fatichi a stare in piedi — quello che ti serve è qualcuno in carne e ossa. Questo può aspettare.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · COM'È, DENTRO -->
+<section>
+  <div class="wrap">
+    <div class="col">
+      <span class="caps marker">04 — Com'è, dentro</span>
+      <p class="body-lg">Un pezzo di prima sessione. Niente di inventato: è il modo in cui lavora.</p>
+      <div class="transcript body-lg">
+        <p><b>Life Compass</b> — Una decisione professionale degli ultimi due anni. Raccontamela in due righe.</p>
+        <p><b>Tu</b> — Ho rifiutato un ruolo con più responsabilità. Volevo più equilibrio.</p>
+        <p><b>Life Compass</b> — Cosa stavi cercando di proteggere?</p>
+        <p><b>Tu</b> — Il tempo. Non volevo tornare a saltare tutte le cene a casa.</p>
+        <p><b>Life Compass</b> — E cosa non eri disposto a perdere?</p>
+        <p><b>Tu</b> — L'idea di essere uno che può ancora scegliere.</p>
+        <p><b>Life Compass</b> — Allora non è «equilibrio». È <em>poter scegliere</em>. Teniamo questa parola.</p>
+      </div>
+      <p class="body-lg" style="margin-top:24px">Nessun incoraggiamento, nessun consiglio. Una domanda alla volta, finché la parola vera non esce da sola. Cinque decisioni come questa, e la mappa dei tuoi valori reali è lì, scritta con le tue parole.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · COME FUNZIONA -->
+<section>
+  <div class="wrap">
+    <div class="col">
+      <span class="caps marker">05 — Come funziona in pratica</span>
+      <p class="body-lg">Richiedi l'accesso da qui: rispondo io, a mano, con il link personale. Una volta dentro: nessun download, nessun account, nessuna password.</p>
+      <p class="body-lg"><b>Venti minuti a sessione, una alla settimana.</b> Sei settimane in tutto. La settimana in mezzo non è tempo morto: serve a lasciar decantare quello che è emerso, e a vederlo agire nelle giornate vere.</p>
+      <p class="body-lg">Il calendario però non lo tiene nessuno. Il percorso aspetta dove l'hai lasciato: se salti una settimana, riprendi da lì senza aver perso niente.</p>
+      <p class="body-lg">Detto questo: sei settimane sono sei settimane. Se non senti di poterti impegnare adesso, aspetta il momento in cui puoi — il percorso non scade, e farne due su sei non serve a niente.</p>
+      <p class="body-lg">Alla fine di ogni sessione ricevi un blocco di testo da conservare. È il tuo percorso in forma portabile: basta quello per riprendere da qualsiasi browser.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 06 · PRIVACY -->
+<section>
+  <div class="wrap">
+    <div class="col">
+      <span class="caps marker">06 — Privacy</span>
+      <p class="body-lg">Quello che scrivi resta nel tuo browser. Non c'è un database, non c'è un account, le conversazioni non vengono salvate sul server.</p>
+      <p class="body-lg">Non c'è modo per nessuno di leggere le tue sessioni. Non è una promessa: è come è costruito.</p>
+      <p class="body-lg">L'unica cosa da sapere: se cancelli i dati del browser, il percorso riparte da zero. Per questo ogni sessione ti dà un testo da tenere da parte.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 07 · A CHI NON È UTILE -->
+<section>
+  <div class="wrap">
+    <div class="col">
+      <span class="caps marker">07 — A chi non è utile</span>
+      <ul class="dash body-lg">
+        <li>A chi cerca soluzioni rapide o ricette pronte</li>
+        <li>A chi non è disposto a mettere in discussione le proprie convinzioni</li>
+        <li>A chi in questo momento ha bisogno di supporto psicologico — questo percorso non lo sostituisce</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 08 · CHI C'È DIETRO -->
+<section>
+  <div class="wrap">
+    <div class="col">
+      <span class="caps marker">08 — Chi c'è dietro</span>
+      <p class="body-lg">Mi chiamo Massimiliano. Non sono un coach né un terapeuta: quella frizione l'ho abitata, e a un certo punto ho smesso di leggerne e ho costruito lo strumento che mi serviva.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 09 · PERCHÉ È GRATUITO -->
+<section>
+  <div class="wrap">
+    <div class="col">
+      <span class="caps marker">09 — Perché è gratuito</span>
+      <p class="body-lg">Perché non l'ho costruito per venderlo, e perché a chi ci sta dentro serve uno strumento, non un abbonamento.</p>
+      <p class="body-lg">Non c'è una versione premium che ti aspetta al quarto passaggio. È tutto qui, ed è tutto tuo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · COSA TI CHIEDO -->
+<section>
+  <div class="wrap">
+    <div class="col">
+      <span class="caps marker">10 — Cosa ti chiedo</span>
+      <p class="body-lg">Niente. Il percorso è tuo e basta.</p>
+      <p class="body-lg">Il progetto è ancora in fase alpha, e quello che vedi tu non lo vede ancora chiunque altro. Se hai voglia di dirmelo, mi serve soprattutto questo:</p>
+      <ul class="dash body-lg">
+        <li><b>Dove si è rotto.</b> Il punto in cui ti sei sentito incalzato, o non hai capito una parola, o la conversazione ha preso una direzione che non era la tua.</li>
+        <li><b>Dove ti sei fermato.</b> Se hai mollato a metà, il punto esatto vale più di tutto il resto.</li>
+        <li><b>Cosa ti è rimasto.</b> Una settimana dopo l'ultima sessione: se è cambiato qualcosa in come decidi.</li>
+      </ul>
+      <p class="body-lg" style="margin-top:24px">Non serve un feedback gentile: serve quello preciso. Una riga va benissimo. Ogni cosa che mi dici finisce nel percorso di chi viene dopo di te.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CHIUSURA -->
+<section class="porta">
+  <div class="wrap">
+    <div class="col">
+      <h2 class="h-lg">Ti va di provarlo?</h2>
+      <p class="body-lg" style="margin-top:24px">Venti minuti a settimana, per sei settimane. Gratuito, senza account, privato.</p>
+      <a href="mailto:massimiliano.davoli@gmail.com?subject=Life%20Compass%20%E2%80%94%20richiesta%20di%20accesso&body=Ciao%20Massimiliano%2C%0D%0A%0D%0Avorrei%20provare%20Life%20Compass.%0D%0A%0D%0A(facoltativo%3A%20una%20riga%20su%20cosa%20ti%20ha%20portato%20qui)">Richiedi l'accesso →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="sign">Non ti consegno una bussola. Ti aiuto a costruire la tua.</span>
+    <span class="caps">Life Compass — Fitness Esistenziale</span>
+  </div>
+</footer>
+
+</body>
+</html>
