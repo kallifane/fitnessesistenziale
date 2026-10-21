@@ -49,17 +49,26 @@
   .serif-i{font-family:var(--serif);font-style:italic}
 
   /* ---- masthead (hero 16:9, full-bleed) ---- */
-  .masthead{line-height:0}
-  .masthead img{display:block;width:100%;height:auto}
+  .topbar{position:sticky;top:0;z-index:10;background:rgba(249,248,246,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--hairline)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:56px}
+  .brand{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--charcoal);text-decoration:none;white-space:nowrap}
+  .topbar nav{display:flex;gap:24px}
+  .topbar nav a{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--neutral);text-decoration:none}
+  .topbar nav a:hover{color:var(--rust)}
+  html{scroll-behavior:smooth}
+  section[id]{scroll-margin-top:72px}
+  .fascia{line-height:0;border-top:1px solid var(--hairline)}
+  .fascia img{display:block;width:100%;height:clamp(120px,17vw,200px);object-fit:cover;object-position:50% 60%}
 
   /* ---- sections ---- */
-  section{padding:128px 0}
+  section{padding:80px 0}
   section+section{border-top:1px solid var(--hairline)}
+  .fascia+section{border-top:0}
   .marker{color:var(--neutral);margin-bottom:32px;display:block}
   p+p{margin-top:20px}
-  .hero{padding-top:88px;padding-bottom:160px}
-  .hero .display{margin-bottom:40px}
-  .hero .kicker{margin-top:40px}
+  .hero{padding-top:72px;padding-bottom:88px}
+  .hero .display{margin-bottom:32px}
+  .hero .kicker{margin-top:28px}
 
   /* ---- image band ---- */
   .band{padding:0}
@@ -105,17 +114,27 @@
   @media(max-width:640px){
     .display{font-size:32px;line-height:38px}
     .h-lg{font-size:28px;line-height:34px}
-    section{padding:80px 0}
-    .hero{padding:96px 0}
+    section{padding:56px 0}
+    .hero{padding:32px 0 56px}
+    .topbar nav{display:none}
   }
 </style>
 </head>
 <body>
 
 <!-- masthead -->
-<div class="masthead">
-  <img src="img/hero.png" alt="Fitness Esistenziale — una figura in meditazione nel vuoto">
-</div>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#">Fitness Esistenziale</a>
+    <nav>
+      <a href="#cose">Cos'è</a>
+      <a href="#chi">Chi scrive</a>
+      <a href="#gesto">Gesto minimo</a>
+      <a href="#pilastri">Pilastri</a>
+      <a href="#porta">Life Compass</a>
+    </nav>
+  </div>
+</header>
 
 <!-- 00 · SOGLIA -->
 <section class="hero">
@@ -129,8 +148,12 @@
   </div>
 </section>
 
+<div class="fascia">
+  <img src="img/cemento-fascia.jpg" width="1376" height="340" alt="" loading="lazy">
+</div>
+
 <!-- 01 · COS'È -->
-<section>
+<section id="cose">
   <div class="wrap">
     <div class="col">
       <span class="caps marker">01 — Cos'è</span>
@@ -143,7 +166,7 @@
 </section>
 
 <!-- 02 · CHI SCRIVE -->
-<section>
+<section id="chi">
   <div class="wrap">
     <div class="col">
       <span class="caps marker">02 — Chi scrive</span>
@@ -156,7 +179,7 @@
 </section>
 
 <!-- 03 · IL GESTO MINIMO -->
-<section>
+<section id="gesto">
   <div class="wrap">
     <div class="col">
       <span class="caps marker">03 — Il gesto minimo</span>
@@ -172,7 +195,7 @@
 </section>
 
 <!-- 04 · LA STRUTTURA -->
-<section>
+<section id="pilastri">
   <div class="wrap">
     <div class="col">
       <span class="caps marker">04 — Sotto, la struttura</span>
@@ -190,7 +213,7 @@
 </section>
 
 <!-- 05 · LA PORTA -->
-<section class="porta">
+<section class="porta" id="porta">
   <div class="wrap">
     <div class="col">
       <span class="caps marker">05 — La porta</span>
