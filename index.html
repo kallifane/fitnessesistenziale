@@ -117,7 +117,8 @@
     .h-lg{font-size:28px;line-height:34px}
     section{padding:56px 0}
     .hero{padding:32px 0 56px}
-    .topbar nav{display:none}
+    .topbar nav a:not(.nav-lc){display:none}
+    .topbar nav a.nav-lc{color:var(--rust)}
   }
 </style>
 </head>
@@ -132,7 +133,7 @@
       <a href="#chi">Chi scrive</a>
       <a href="#gesto">Gesto minimo</a>
       <a href="#pilastri">Pilastri</a>
-      <a href="#porta">Life Compass</a>
+      <a class="nav-lc" href="life-compass.html">Life Compass</a>
     </nav>
   </div>
 </header>
